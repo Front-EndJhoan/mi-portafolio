@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title{
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  display: flex;
+  padding: auto;
+}
+
+.rotate{
+  display: inline-block;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rotate span{
+  height: 100px;
+  width: 200px;
+  display: block;
+  animation: rotateWords 8s infinite;
+}
+
+@keyframes rotateWords{
+  0% {transform: translateY(0);}
+  33% {transform: translateY(-200%);}
+  66% {transform: translateY(-300);}
+  100% {transform: translateY(0);}
+}
