@@ -11,6 +11,7 @@ body{
   --color-text-home1: hsla(145, 100%, 50%, 1);
   --color-text-home2: rgb(174, 0, 0);
   --color-text-home3: hsla(180, 100%, 50%, 1);
+  
   background: radial-gradient(circle, hsla(243, 100%, 44%, 1) 5%, hsla(243, 100%, 28%, 1) 33%, hsla(248, 100%, 18%, 1) 45%, hsla(243, 100%, 50%, 1) 100%)
 }
 
