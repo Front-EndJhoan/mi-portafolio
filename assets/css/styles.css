@@ -3,6 +3,7 @@ body{
   padding: 0;
   background: var(--background);
   color: var(--color-base);
+  font-size:  clamp(1rem, 0.875rem + 0.5vw, 1.125rem);
 }
 
 :root{
@@ -66,27 +67,42 @@ header{
   display: flex;
 }
 
-.primera-web{
+.about{
+  width: 100vw;
+  height: auto;
+ display: flex;
+ justify-content: space-around;
+ padding-block: 12px;
+}
+
+.content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100vw;
-  height: 100vh;
 }
 
-h2{
+.img{
   display: flex;
 }
 
-.p-web{
+.p-about{
   display: flex;
-  width: 80ch;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 65ch;
+  line-height: 1.2;
+  padding-block-start: 40px;
+  margin-inline-end: 60px;
 }
 
-.libro{
-  aspect-ratio: 16/10;
+.foto{
   display: flex;
-  align-items: flex-start;
+  height: 500px;
+  border: 3px solid var(--color-text-home3);
+  border-radius: 25px;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
-
+.foto:hover{
+  box-shadow: var(--color-text-home1);
+  transform: translateY(-10px);
+}
