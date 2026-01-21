@@ -1,28 +1,32 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const cards = document.querySelectorAll(".card");
-    const btnPrev = document.getElementById("btnPrev");
-    const btnNext = document.getElementById("btnNext");
+    const textos = ["I am", "Website Builder", "Web Developer Fronted"];
+    let indiceTexto = 0;
+    let indiceLetra = 0;
+    let escribiendo = true;
 
-    let currentIndex = 0;
+    const elemento = document.getElementById("text");
 
-    function updateCard() {
-        cards.forEach(card => card.classList.remove("active"));
-        cards[currentIndex].classList.add("active");
+    function efectoEscritura() {
+        const textoActual = textos[indiceTexto];
+
+        if (escribiendo) {
+            elemento.textContent = textoActual.slice(0, indiceLetra++);
+        if (indiceLetra > textoActual.length) {
+            escribiendo = false;
+            setTimeout(efectoEscritura, 1000);
+            return;
+        }
+        }else {
+            elemento.textContent = textoActual.slice(0, indiceLetra--);
+            if (indiceLetra === 0) {
+                escribiendo = true;
+                indiceTexto = (indiceTexto + 1) %
+                textos.length;
+            }
+        }
+
+        setTimeout(efectoEscritura, escribiendo ? 100 : 50);
     }
 
-    btnPrev.addEventListener("click", () => {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = cards.length - 1;
-        }
-        updateCard();
-    });
-
-    btnNext.addEventListener("click", () => {
-        currentIndex++;
-        if (currentIndex >= cards.length) {
-            currentIndex = 0;
-        }
-        updateCard();
-    })
+    efectoEscritura();
 })
