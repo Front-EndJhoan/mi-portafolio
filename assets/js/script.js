@@ -29,4 +29,27 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     efectoEscritura();
+
+    const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+// Colores de cada tema
+const temaClaro = {
+'--primary-color-bg': 'hsl(144, 35%, 20%)',
+'--main-text': 'hsl(0, 0%, 100%)',
+};
+
+const temaOscuro = {
+ 
+};
+
+// Cambiar el tema al marcar el switch
+toggle.addEventListener('change', (e) => {
+  const tema = e.target.checked ? temaOscuro : temaClaro;
+  for (const prop in tema) {
+    root.style.setProperty(prop, tema[prop]);
+  }
+});
+
+
 })

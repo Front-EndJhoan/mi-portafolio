@@ -1,0 +1,13 @@
+:root{
+    // Modo claro //
+--efect-color: hsl(300, 100%, 25%);
+--primary-color-bg: hsl(0, 0%, 0%);
+--secondary-color: hsl(0, 0%, 42%);
+--main-text: hsl(0, 0%, 100%);
+--alternative-text: hsl(159, 39%, 37%);
+--letter-h-height: clamp(2em, 2.5vw, 3.5em);
+}
+
+a{
+    font-weight: 500;
+}
