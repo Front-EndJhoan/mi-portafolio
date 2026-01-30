@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const textos = ["I am", "Website Builder", "Web Developer Fronted"];
+    const textos = ["I am", "Website Builder", "Fronted Developer"];
     let indiceTexto = 0;
     let indiceLetra = 0;
     let escribiendo = true;
@@ -30,26 +30,41 @@ document.addEventListener("DOMContentLoaded", function(){
 
     efectoEscritura();
 
-    const toggle = document.getElementById('theme-toggle');
+// Modo Claro-Oscuro //
+
+const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
-// Colores de cada tema
-const temaClaro = {
-'--primary-color-bg': 'hsl(144, 35%, 20%)',
+const temaOscuro = {
+'--primary-color-bg': 'hsl(0, 0%, 0%)',
 '--main-text': 'hsl(0, 0%, 100%)',
 };
 
-const temaOscuro = {
- 
+const temaClaro = {
+'--primary-color-bg': 'hsl(0, 0%, 100%)',
+'--main-text': 'hsl(300, 100%, 25%)',
 };
 
-// Cambiar el tema al marcar el switch
 toggle.addEventListener('change', (e) => {
-  const tema = e.target.checked ? temaOscuro : temaClaro;
+  const tema = e.target.checked ? temaClaro : temaOscuro;
   for (const prop in tema) {
     root.style.setProperty(prop, tema[prop]);
   }
 });
+
+// Nav Dinámico //
+
+ const nav = document.querySelector(".nav-bar");
+ window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        nav.classList.add("nav-scrolled");
+    } else {
+        nav.classList.remove("nav-scrolled");
+    }
+ })
+
+//  Menú Hamburguesa //
+
 
 
 })
