@@ -30,7 +30,7 @@ a {
 .hero h1, .texto-hero {
   color: var(--color-text);
   font-size: var(--letter-h-height);
-  background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background: linear-gradient(270deg, red, green, cyan, blue, purple);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 6s ease infinite;
@@ -185,4 +185,41 @@ input:checked + .slider::before {
 nav.nav-scrolled {
   background-color: var(--efect-color);
   box-shadow: 0 2px 10px var(--primary-color-bg);
+}
+
+@media (max-width: 767px) {
+  ul {
+    list-style: none;
+    background-color: var(--efect-color);
+  }
+}
+.about {
+  background-color: var(--primary-color-bg);
+  color: var(--main-text);
+  min-height: 100vh;
+  scroll-margin-top: 3em;
+}
+
+.about-text {
+  max-width: 60ch;
+  line-height: 1.8;
+}
+
+.about-img {
+  width: 450px;
+  height: 450px;
+  background-image: url(../img/jhoancolina.webp);
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.8s ease-out;
+  box-shadow: 4px 8px 20px var(--efect-color);
+}
+
+.about-img:hover {
+  filter: grayscale(0%);
+  background-size: 120%;
 }/*# sourceMappingURL=style.css.map */
