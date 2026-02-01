@@ -3,8 +3,12 @@
 --efect-color: hsl(300, 100%, 25%);
 --primary-color-bg: hsl(0, 0%, 0%);
 --main-text: hsl(0, 0%, 100%);
---secondary-text: hsla(0, 0%, 100%, 0.84);
+--secondary-color: hsl(252, 100%, 35%);
 --letter-h-height: clamp(1.5em, 2.5vw, 3.5em);
+
+// Modo Oscuro //
+--primary-color-bg: hsl(0, 0%, 100%);
+--main-text: hsl(252, 100%, 35%);
 }
 
 a{

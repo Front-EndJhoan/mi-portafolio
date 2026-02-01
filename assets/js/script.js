@@ -36,21 +36,26 @@ const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
 const temaOscuro = {
-'--primary-color-bg': 'hsl(0, 0%, 0%)',
-'--main-text': 'hsl(0, 0%, 100%)',
+  '--primary-color-bg': 'hsl(0, 0%, 0%)',
+  '--main-text': 'hsl(0, 0%, 100%)',
 };
 
 const temaClaro = {
-'--primary-color-bg': 'hsl(0, 0%, 100%)',
-'--main-text': 'hsl(300, 100%, 25%)',
+  '--primary-color-bg': 'hsl(0, 0%, 100%)',
+  '--main-text': 'hsl(252, 100%, 35%)',
 };
 
-toggle.addEventListener('change', (e) => {
-  const tema = e.target.checked ? temaClaro : temaOscuro;
+function aplicarTema() {
+  const tema = toggle.checked ? temaOscuro : temaClaro;
   for (const prop in tema) {
     root.style.setProperty(prop, tema[prop]);
   }
-});
+}
+
+aplicarTema();
+
+toggle.addEventListener('change', aplicarTema);
+
 
 // Nav Dinámico //
 
@@ -63,8 +68,19 @@ toggle.addEventListener('change', (e) => {
     }
  })
 
-//  Menú Hamburguesa //
+//  Cerrar Menú Hamburguesa
 
+const menuNav = document.getElementById('menuNav');
+const navLinks = document.querySelectorAll('#menuNav .nav-link');
 
+const bsCollapse = new bootstrap.Collapse(menuNav, {
+  toggle: false
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    bsCollapse.hide();
+  });
+});
 
 })

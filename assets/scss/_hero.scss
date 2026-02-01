@@ -65,3 +65,16 @@
     color: var(--efect-color);
     border: 1px solid var(--efect-color);
 }
+
+@media (max-width: 576px){
+    .hero-bar{
+    width: 80%;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 4px 8px 20px var(--efect-color),
+}
+}

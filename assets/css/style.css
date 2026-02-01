@@ -2,8 +2,10 @@
   --efect-color: hsl(300, 100%, 25%);
   --primary-color-bg: hsl(0, 0%, 0%);
   --main-text: hsl(0, 0%, 100%);
-  --secondary-text: hsla(0, 0%, 100%, 0.84);
+  --secondary-color: hsl(252, 100%, 35%);
   --letter-h-height: clamp(1.5em, 2.5vw, 3.5em);
+  --primary-color-bg: hsl(0, 0%, 100%);
+  --main-text: hsl(252, 100%, 35%);
 }
 
 a {
@@ -77,6 +79,18 @@ a {
   border: 1px solid var(--efect-color);
 }
 
+@media (max-width: 576px) {
+  .hero-bar {
+    width: 80%;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 4px 8px 20px var(--efect-color);
+  }
+}
 .header {
   height: 40px;
   background-color: var(--primary-color-bg);
@@ -154,7 +168,7 @@ a {
   width: 40px;
   height: 21px;
   background-color: var(--primary-color);
-  border: 1px solid var(--efect-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 20px;
   transition: 0.3s;
 }
@@ -166,20 +180,20 @@ a {
   height: 18px;
   left: 1px;
   top: 1px;
-  background-color: var(--efect-color);
+  background-color: var(--secondary-color);
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + .slider {
   background-color: var(--primary-color);
-  border: 1px solid var(--efect-color);
+  border: 1px solid var(--main-text);
 }
 
 input:checked + .slider::before {
   transform: translateX(20px);
-  background-color: var(--efect-color);
-  border: 1px solid var(--efect-color);
+  background-color: var(--main-text);
+  border: 1px solid var(--main-text);
 }
 
 nav.nav-scrolled {
@@ -222,4 +236,15 @@ nav.nav-scrolled {
 .about-img:hover {
   filter: grayscale(0%);
   background-size: 120%;
+}
+
+@media (max-width: 992px) {
+  .container-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
