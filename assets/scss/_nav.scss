@@ -55,8 +55,8 @@ ul a:hover{
   position: relative;
   width: 40px;
   height: 21px;
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
+  background-color: var(--efect-color);
+  border: 1px solid var(--efect-color);
   border-radius: 20px;
   transition: 0.3s;
 }
@@ -68,25 +68,24 @@ ul a:hover{
   height: 18px;
   left: 1px;
   top: 1px;
-  background-color: var(--secondary-color);
+  background-color: var(--support-color);
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + .slider {
-  background-color: var(--primary-color);
-  border: 1px solid var(--main-text);
+  background-color: var(--primary-color-bg);
+  border: 1px solid var(--efect-color);
 }
 
 input:checked + .slider::before {
   transform: translateX(20px);
-  background-color: var(--main-text);
-  border: 1px solid var(--main-text);
+  background-color: var(--efect-color);
+  border: 1px solid var(--efect-color);
 }
 
 nav.nav-scrolled{
-  background-color: var(--efect-color);
-  box-shadow: 0 2px 10px var(--primary-color-bg);
+  background-color: var(--nav-color);
 }
 
 @media (max-width: 767px){

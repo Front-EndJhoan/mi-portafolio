@@ -37,12 +37,12 @@ const root = document.documentElement;
 
 const temaOscuro = {
   '--primary-color-bg': 'hsl(0, 0%, 0%)',
-  '--main-text': 'hsl(0, 0%, 100%)',
+  '--main-text': 'hsla(15, 28%, 89%, 1)',
 };
 
 const temaClaro = {
-  '--primary-color-bg': 'hsl(0, 0%, 100%)',
-  '--main-text': 'hsl(252, 100%, 35%)',
+  '--primary-color-bg': 'hsla(15, 28%, 89%, 1)',
+  '--main-text': 'hsl(300, 100%, 25%)',
 };
 
 function aplicarTema() {

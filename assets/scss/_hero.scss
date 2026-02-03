@@ -5,15 +5,14 @@
 }
 
 .hero-bar{
-    width: 60%;
-    height: 280px;
+    width: 75%;
+    height: 340px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     box-shadow: 4px 8px 20px var(--efect-color),
-
 }
 
 .hero h1, .texto-hero{
@@ -71,7 +70,7 @@
     width: 80%;
     height: 320px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;

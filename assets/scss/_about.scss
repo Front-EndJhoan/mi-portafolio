@@ -31,8 +31,9 @@
 
 @media (max-width: 992px){
 .container-flex{
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
+    gap: 1.5em;
     }
 
 .about-img{

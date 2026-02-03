@@ -2,13 +2,14 @@
     // Modo Oscuro //
 --efect-color: hsl(300, 100%, 25%);
 --primary-color-bg: hsl(0, 0%, 0%);
---main-text: hsl(0, 0%, 100%);
---secondary-color: hsl(252, 100%, 35%);
+--main-text: hsla(15, 28%, 89%, 1);
+--support-color: hsl(0, 0%, 100%);
+--nav-color: hsla(303, 32%, 12%, 1);
 --letter-h-height: clamp(1.5em, 2.5vw, 3.5em);
 
 // Modo Oscuro //
---primary-color-bg: hsl(0, 0%, 100%);
---main-text: hsl(252, 100%, 35%);
+--primary-color-bg: hsla(15, 28%, 89%, 1);
+--main-text: hsl(300, 100%, 25%);
 }
 
 a{
