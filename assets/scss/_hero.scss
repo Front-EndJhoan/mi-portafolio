@@ -1,17 +1,17 @@
 .hero{
     background-color: var(--primary-color-bg);
-    min-height: calc(100vh - 90px);
+    min-height: calc(100dvh - 90px);
     position: relative;
 }
 
 .hero-bar{
-    width: 75%;
-    height: 340px;
+    width: 50%;
+    height: 240px;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 60px 40px 80px 140px;
     box-shadow: 4px 8px 20px var(--efect-color),
 }
 
@@ -73,7 +73,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 60px 40px 80px 140px;
     box-shadow: 4px 8px 20px var(--efect-color),
 }
 }
