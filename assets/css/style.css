@@ -4,6 +4,7 @@
   --main-text: hsla(15, 28%, 89%, 1);
   --support-color: hsl(0, 0%, 100%);
   --nav-color: hsla(303, 32%, 12%, 1);
+  --secondary-color: hsla(239, 84%, 10%, 1);
   --letter-h-height: clamp(1.5em, 2.5vw, 3.5em);
   --primary-color-bg: hsla(15, 28%, 89%, 1);
   --main-text: hsl(300, 100%, 25%);
@@ -263,13 +264,48 @@ nav.nav-scrolled {
   width: 90%;
   height: auto;
 }
-.tools p {
-  max-width: 60ch;
+
+.card-container {
+  background-color: var(--secondary-color);
+  color: var(--support-color);
+}
+
+.tools-container .html {
+  background-color: orange;
+  padding: 0.3em;
+}
+.tools-container .css {
+  background-color: blue;
+  padding: 0.3em;
+}
+.tools-container .js {
+  background-color: yellow;
+  padding: 0.3em;
+}
+.tools-container .wp {
+  background-color: skyblue;
+  padding: 0.3em;
+}
+.tools-container .bs {
+  background-color: blueviolet;
+  padding: 0.3em;
+}
+.tools-container .git {
+  background-color: black;
+  padding: 0.3em;
+}
+.tools-container .github {
+  background-color: black;
+  padding: 0.3em;
 }
 
 @media (max-width: 912px) {
   .flex-tools {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+  .tools-container {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
