@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const textos = ["I am", "Website Builder", "Fronted Developer"];
+    const textos = ["I am", "Website Builder", "Fronted Developer", "Creative Designer"];
     let indiceTexto = 0;
     let indiceLetra = 0;
     let escribiendo = true;

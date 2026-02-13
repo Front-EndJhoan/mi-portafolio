@@ -5,14 +5,15 @@
 }
 
 .hero-bar{
-    width: 50%;
-    height: 240px;
+    width: 60%;
+    height: 340px;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 60px 40px 80px 140px;
     box-shadow: 4px 8px 20px var(--efect-color),
+    
 }
 
 .hero h1, .texto-hero{
