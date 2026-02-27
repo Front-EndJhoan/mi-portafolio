@@ -41,12 +41,12 @@ html {
 
 :root {
   --header-size: clamp(1.5rem, 5vw + 1rem, 3rem);
-  --text-size: clamp(1rem, 1.8vw + 0.5rem, 2rem);
+  --text-size: clamp(1rem, 1.2vw + 0.5rem, 2rem);
 }
 
 .hero {
   background-color: var(--primary-color-bg);
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 110px);
   position: relative;
 }
 
