@@ -1,0 +1,37 @@
+.experience{
+    background-color: var(--primary-color-bg);
+    color: var(--main-text);
+    scroll-margin-top: 2em;
+    min-height: 100vh;
+
+.exp-text{
+    width: 65ch;
+    text-align: center;
+}
+
+article a{
+    color: var(--efect-color);
+}
+
+article ol{
+    padding: 0;
+}
+}
+
+@media (max-width: 767px){
+    .experience .exp-text{
+        width: 50ch;
+    }
+}
+
+@media (max-width: 576px){
+    .experience .exp-text{
+        width: 40ch;
+        text-align: center;
+    }
+
+    .experience article ol{
+        padding-inline: 1em;
+        text-align: center;
+    }
+}

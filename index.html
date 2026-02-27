@@ -9,6 +9,9 @@
     <script src="https://kit.fontawesome.com/68a650b113.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header d-flex justify-content-center align-items-center gap-5">
@@ -39,13 +42,13 @@
     <div class="collapse navbar-collapse justify-content-center" id="menuNav">
       <ul class="navbar-nav gap-3 text-center">
         <li class="nav-item">
-          <a class="nav-link" href="#about">Acerca de mí</a>
+          <a class="nav-link judson-regular small-text" href="#about">Acerca de mí</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mi trabajo más importante</a>
+          <a class="nav-link judson-regular small-text" href="#experience">Lo que he creado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#tools">Conocimientos</a>
+          <a class="nav-link judson-regular small-text" href="#tools">Conocimientos</a>
         </li>
       </ul>
     </div>
@@ -63,24 +66,92 @@
 
     <section class="hero">
         <div class="hero-bar d-flex flex-column text-center justify-content-center align-items-center gap-2">
-        <span class="texto-hero" id="text"></span>
-        <h1>Front-EndJhoan</h1>
+        <span class="texto-hero judson-regular" id="text"></span>
+        <h1 class="judson-bold big-text">Front-EndJhoan</h1>
 
-        <a class="button" href="assets/docs/Libro.pdf" download="">Descargar CV</a>
+        <a class="button judson-regular small-text" href="assets/docs/Libro.pdf" download="">Descargar CV</a>
         </div>
     </section>
 
     <section class="about  d-flex align-items-center" id="about">
       <div class="container-flex container-xl d-flex justify-content-between align-items-center">
       <div class="about-text d-flex flex-column justify-content-center justify-content-center">
-        <p>Soy Jhoan, desarrollador web frontend viviendo en Zaragoza.
+        <p class="judson-regular small-text" >Soy Jhoan, desarrollador web frontend viviendo en Zaragoza.
 Me apasiona crear experiencias digitales limpias, intuitivas y responsivas. Me gusta cuidar los detalles, escribir código ordenado y trabajar en proyectos donde la usabilidad y el diseño tengan un papel protagonista.</p>
 
-        <p>Siempre estoy explorando nuevas herramientas y tecnologías para mejorar mis habilidades y ofrecer soluciones web de calidad.</p>
+        <p class="judson-regular small-text">Siempre estoy explorando nuevas herramientas y tecnologías para mejorar mis habilidades y ofrecer soluciones web de calidad.</p>
       </div>
 
     <div class="about-img d-flex align-items-center justify-content-center"></div>
     </div>
+    </section>
+
+    <section class="experience" id="experience">
+     <h1 class="text-center mb-5 judson-bold big-text">Proyectos realizados hasta ahora</h1>
+
+     <article class="calma d-flex flex-column justify-content-center align-items-center pb-5">
+      <h2 class="text-center my-3 judson-bold big-text">Landing Page – Calma Mindfulness</h2>
+
+      <p class="exp-text judson-regular small-text">Este proyecto consiste en una landing page desarrollada completamente desde cero, utilizando HTML5, CSS3 y JavaScript puro, sin frameworks ni librerías externas. El objetivo fue demostrar dominio sólido de los fundamentos del desarrollo frontend y la capacidad de construir interfaces optimizadas, escalables y bien estructuradas.</p>
+
+      <p class="exp-text judson-regular small-text">La arquitectura del código se diseñó siguiendo buenas prácticas de semántica, accesibilidad y organización modular. En CSS trabajé con metodología estructurada para mantener estilos reutilizables y escalables, incorporando diseño responsive mediante media queries y enfoque mobile-first.</p>
+
+      <p class="exp-text judson-regular small-text">Desde el punto de vista funcional, implementé interactividad dinámica con JavaScript nativo, optimizando el rendimiento y evitando dependencias innecesarias. La página prioriza:
+      </p>
+
+      <ol>
+        <li class="judson-regular small-text exp-text">Carga rápida y optimización de recursos</li>
+        <li class="judson-regular small-text">Adaptabilidad total a dispositivos móviles</li>
+        <li class="judson-regular small-text">Buenas prácticas de accesibilidad</li>
+        <li class="judson-regular small-text">Enfoque en conversión y experiencia de usuario</li>
+      </ol>
+
+      <p class="exp-text text-center judson-regular small-text">Aquí comparto el prototipo creado con Figma Make y el creado por mí <br>
+        <a href="#">Creado con Figma</a>
+        <a href="#">Creado con HTML, CSS y JS</a>
+      </p>
+     </article>
+
+     <article class="fuente-vieja d-flex flex-column justify-content-center align-items-center pb-5">
+      <h2 class="text-center my-3 judson-bold big-text">Página Corporativa – Fuente Vieja</h2>
+
+      <p class="exp-text judson-regular small-text">Desarrollé la página web para una empresa local de Zaragoza especializada en la producción de aceite de oliva y productos derivados. El proyecto tuvo un enfoque estratégico: transmitir tradición, calidad y profesionalismo mediante una experiencia digital moderna y clara.</p>
+
+      <p class="exp-text judson-regular small-text">La estructura del sitio fue diseñada para facilitar la navegación, resaltar el catálogo de productos y comunicar el proceso de producción. Se priorizó:</p>
+
+      <ol>
+        <li class="judson-regular small-text">Diseño visual alineado con la identidad de marca</li>
+        <li class="judson-regular small-text">Optimización SEO para posicionamiento local</li>
+        <li class="judson-regular small-text">Diseño responsive para todos los dispositivos</li>
+        <li class="judson-regular small-text">Organización clara del contenido corporativo</li>
+      </ol>
+
+      <p class="exp-text judson-regular small-text">Trabajé especialmente la jerarquía visual, el uso del color y la presentación del producto para reforzar la percepción de calidad. Además, implementé formularios de contacto optimizados y llamadas a la acción estratégicamente ubicadas para fomentar la captación de clientes.</p>
+
+      <p class="judson-regular small-text">Echa un vistazo a ésta bonita web <a href="#">Fuente Vieja</a></p>
+     </article>
+
+     <article class="caminoreal d-flex flex-column justify-content-center align-items-center pb-5">
+      <h2 class="text-center my-3 judson-bold big-text text-center">Página Web en WordPress – Grupo de Mariachis</h2>
+
+      <p class="exp-text judson-regular small-text">En este proyecto desarrollé el sitio web para un grupo de mariachis en Colombia utilizando WordPress como CMS. El objetivo principal fue crear una plataforma autogestionable que les permitiera mostrar sus servicios, galería multimedia y facilitar contrataciones.</p>
+
+      <div>
+      <p class="judson-regular small-text text-center">La solución incluyó:</p>
+
+      <ol>
+        <li class="judson-regular small-text">Personalización avanzada de tema</li>
+        <li class="judson-regular small-text">Adaptación del diseño a la identidad del grupo</li>
+        <li class="judson-regular small-text">Optimización de rendimiento y velocidad</li>
+        <li class="judson-regular small-text">Integración de formularios de contacto y reserva</li>
+        <li class="judson-regular small-text">Estructura SEO básica para mejorar visibilidad</li>
+      </ol>
+      </div>
+
+      <p class="exp-text judson-regular small-text">Más allá del desarrollo técnico, el reto fue transmitir energía, tradición y profesionalismo mediante el diseño visual, asegurando al mismo tiempo una experiencia fluida en dispositivos móviles, considerando que gran parte del tráfico proviene de smartphones.</p>
+
+      <p class="judson-regular small-text text-center">Visita la web del mariachi Camino Real <a href="#">Camino Real</a></p>
+     </article>
     </section>
 
     <section class="tools d-flex text-center justify-content-center gap-3" id="tools">
@@ -88,89 +159,89 @@ Me apasiona crear experiencias digitales limpias, intuitivas y responsivas. Me g
         <div class="accordion-flex d-flex align-items-center justify-content-center w-50">
       <div class="accordion w-100" id="accordionExample">
   <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold big-text">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
         HTML
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Trabajo con HTML semántico aplicando buenas prácticas de accesibilidad, estructura y jerarquía del contenido. Utilizo etiquetas estructurales como <code>header</code>, <code>section</code>, <code>article</code>, <code>nav</code> y <code>footer</code> para construir sitios bien organizados, optimizados para SEO y preparados para una correcta interpretación por parte de navegadores y tecnologías asistivas. Mantengo un código limpio, escalable y alineado con los estándares actuales.
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         CSS
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Cuento con un dominio avanzado de CSS, creando interfaces modernas, responsivas y visualmente atractivas. Manejo con solidez Flexbox y CSS Grid para estructurar layouts complejos de forma eficiente y adaptable a distintos dispositivos. Trabajo con animaciones, transiciones, variables CSS y metodologías de organización que garantizan escalabilidad y mantenimiento del código.
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         JAVASCRIPT
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Poseo conocimientos básicos de JavaScript enfocados principalmente en la maquetación y la interacción en el frontend. Implemento funcionalidades dinámicas simples, manipulación del DOM y eventos para mejorar la experiencia del usuario. Mi enfoque está orientado a complementar la estructura y el diseño con interactividad funcional y ligera.
       </div>
     </div>
   </div>
 
    <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         WORDPRESS
       </button>
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Trabajo con WordPress a nivel avanzado, desarrollando y personalizando temas, optimizando rendimiento y gestionando sitios autoadministrables. Tengo experiencia en configuración de plugins, personalización mediante CSS y ajustes estructurales para adaptar cada proyecto a necesidades específicas. Desarrollo soluciones funcionales, escalables y orientadas a resultados.
       </div>
     </div>
   </div>
 
    <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         BOOTSTRAP
       </button>
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Utilizo Bootstrap como framework CSS para agilizar el desarrollo de interfaces responsivas y consistentes. Manejo su sistema de grid, componentes reutilizables y utilidades para estructurar proyectos de manera eficiente. Este portafolio ha sido desarrollado con Bootstrap, demostrando mi capacidad para adaptarlo y personalizarlo según el diseño requerido.
       </div>
     </div>
   </div>
 
    <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
         GIT
       </button>
     </h2>
     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Trabajo con Git como sistema de control de versiones, gestionando ramas, fusiones y flujos de trabajo colaborativos. Mantengo un historial organizado mediante commits estructurados y aplico buenas prácticas para el seguimiento y control del desarrollo de proyectos.
       </div>
     </div>
   </div>
 
    <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header judson-bold">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
         GITHUB
       </button>
     </h2>
     <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body judson-regular">
         Utilizo GitHub como plataforma de colaboración y gestión de proyectos, administrando repositorios, ramas y pull requests. Tengo experiencia en trabajo colaborativo, documentación de proyectos y control de versiones en entornos reales de desarrollo.
       </div>
     </div>
