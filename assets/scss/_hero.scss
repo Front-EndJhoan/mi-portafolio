@@ -40,7 +40,6 @@
 }
 
 .texto-hero{
-    font-size: var(--letter-h-height);
     color: var(--color-text);
     min-height: 3em;
 }
@@ -69,7 +68,6 @@
 @media (max-width: 576px){
     .hero-bar{
     width: 80%;
-    height: 320px;
     position: absolute;
     top: 40%;
     left: 50%;
